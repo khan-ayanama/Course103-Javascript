@@ -1,0 +1,38 @@
+/* http: //unsplash.it/320/300?image=859 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --base: #ffc600;
+    --blur: 1px;
+    --spacing: 10px;
+}
+
+
+body {
+    background-color: #193549;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.controls {
+    padding-top: 2rem;
+}
+
+img {
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    /* padding: 2rem; */
+    background-color: var(--base);
+    margin-top: 1rem;
+}

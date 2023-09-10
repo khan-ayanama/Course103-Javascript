@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Ahead</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="index.js" defer></script>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: rgb(253, 207, 0);
+        }
+
+        input[name="search-bar"] {
+            font-size: 1.2rem;
+            padding: 0.2em 1em;
+            display: block;
+
+        }
+
+        .search-result {
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            background-color: white;
+            display: inline-block;
+            width: 20%;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <input placeholder="Search" name="search-bar" type="text">
+        <div class="search-result">
+            <p class="city">City</p>
+            <p class="population">Population</p>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
