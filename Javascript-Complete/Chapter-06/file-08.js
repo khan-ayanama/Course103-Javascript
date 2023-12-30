@@ -1,12 +1,3 @@
-// new keyword 
-// 1.) this = {}
-// 2.) return {} 
-//
-
-// __proto__ 
-// // official ecmascript document
-// [[prototype]]
-
 // constructor function 
 function CreateUser(firstName, lastName, email, age, address){
     this.firstName = firstName;
