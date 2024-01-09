@@ -1,9 +1,4 @@
 // closures
-// closure : 30-40%
-// analyse : 70-80%
-// real example : 100%
-
-
 // function can return functions
 
 // function outerFunction(){
@@ -17,15 +12,16 @@
 // // console.log(ans);
 // ans();
 
-
-function printFullName(firstName, lastName){
-    function printName(){
-        console.log(firstName, lastName);
-    }
-    return printName;
+// When function returns the function
+// It also returns with the variable it needed
+function printFullName(firstName, lastName) {
+  function printName() {
+    console.log(firstName, lastName);
+  }
+  return printName;
 }
 
 const ans = printFullName("harshit", "sharma");
 // console.log(ans);
+// Here answer has the access to firstName & lastName
 ans();
-
