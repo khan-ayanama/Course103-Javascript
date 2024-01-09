@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Traversal Example</title>
+  </head>
+  <body>
+    <div id="parent">
+      <p>First child</p>
+      <span>Second child</span>
+      <p>Last child</p>
+    </div>
+
+    <script>
+      // Traversing the DOM
+      const parentElement = document.getElementById("parent");
+
+      // Parent and Child Nodes
+      const parentContainer = parentElement.parentNode;
+      const childNodes = parentElement.childNodes;
+
+      // Siblings
+      const firstChild = parentElement.firstChild;
+      const nextSibling = firstChild.nextSibling;
+
+      const lastChild = parentElement.lastChild;
+      const previousSibling = lastChild.previousSibling;
+
+      // Element-specific Traversal
+      const firstElementChild = parentElement.firstElementChild;
+      const nextElementSibling = firstElementChild.nextElementSibling;
+
+      console.log("Parent Node:", parentContainer);
+      console.log("Child Nodes:", childNodes);
+      console.log("Next Sibling:", nextSibling);
+      console.log("Previous Sibling:", previousSibling);
+      console.log("First Element Child:", firstElementChild);
+      console.log("Next Element Sibling:", nextElementSibling);
+    </script>
+  </body>
+</html>
